@@ -1,0 +1,443 @@
+/* Bagian Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    padding-top: 100px; /* Sesuaikan dengan tinggi navbar */
+}
+
+.navbar_head {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #57b4ba;
+}
+
+.container {
+    width: 80%;
+    margin: 50px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+.judul-conta {
+margin-left: 46px;
+}
+.hr-style {
+    border: 1px solid black;
+    width: 73%;
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap; /* agar pindah baris jika penuh */
+    gap: 20px;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+.product-list2 {
+    display: flex;
+    flex-wrap: wrap; /* agar pindah baris jika penuh */
+    gap: 20px;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+.product {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    background-color: #fff;
+}
+.product2 {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    background-color: #fff;
+}
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.product h3 {
+    margin: 5px 0;
+}
+.product p {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+
+/* Bagian Nafigasi */
+.header2{
+    background-color: #57b4ba;
+    padding: 10px 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+.nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+/* Bagian Logo Header */
+.header1 {
+    background-color: #57b4ba;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+}
+.logo img {
+    height: 40px;
+}
+.right-section {
+    display: flex;
+    gap: 50px;
+}
+.button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.search-btn {
+    background-color: rgb(224, 224, 224);
+    width: 200px;
+    height: 22px;
+}
+ .logout-btn {
+    background-color: lightgray;
+    width: 100px;
+    height: 30px;
+}
+
+   /* Tambahkan ini di CSS Anda */
+   .iconsuser {
+    position: relative;
+    display: inline-block;
+    z-index: 1001;
+}
+
+.iconsuser .bx {
+    font-size: 50px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: -10px;
+}
+
+.submenuhead {
+    position: absolute;
+    top: calc(100% + 10px); /* 10px jarak dari ikon */
+    right: 0;
+    width: 320px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.submenuhead.open-menu {
+    max-height: 500px;
+}
+
+/* Animasi hover */
+.submenulog:hover {
+    background-color: #f5f5f5;
+    transition: background-color 0.2s;
+}
+
+.submenu {
+    background: #fff;
+    color: #000000;
+    padding: 20px;
+    margin: 10px 0; /* Hanya margin atas bawah */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Tambahkan shadow */
+    border-radius: 8px;
+}
+.navbar_head {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Pastikan navbar di atas semua */
+    background-color: #57b4ba;
+}
+        .userinfo {
+            display: flex;
+            align-items: center;
+        }
+        .userinfo h3{
+            font-weight: 500;
+        }
+        .userinfo i {
+            font-size: 40px;
+            width: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .submenu hr {
+            border: 0;
+            height: 1px;
+            width: 100%;
+            background: #ccc;
+            margin: 15px 0 10px;
+        }
+
+        .submenulog {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #000000;
+            margin: 12px 0;
+        }
+
+        .submenulog p {
+            width: 100%;
+        }
+        .submenulog i {
+            font-size: 30px;
+            width: 40px;
+            border-radius: 50%;
+            padding: 8px;
+            margin-right: 15px;
+        }
+        .submenulog span {
+            font-size: 20px;
+            transition: transform 0.5s;
+        }
+        .submenulog:hover span{
+            transform: translateX(5px);
+}
+.submenulog:hover p {
+font-weight: 600;
+
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+/* Bagian footer */
+.footer {
+    background-color: #015551;
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+.footer-content {
+    max-width: 800px;
+    margin: auto;
+}
+.footer h3 {
+    margin: 0;
+    font-size: 18px;
+}
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+.social-icons {
+    margin-top: 10px;
+}
+.social-icons a {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: black;
+}
+
+/* foto bagian header*/
+.img-header {
+    position: relative;
+    background-image: url('../gambar/woman_fotocopy.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-header1 {
+    position: relative;
+    background-image: url('../gambar/side_man_fc.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-header2 {
+    position: relative;
+    background-image: url('../gambar/wmn_fc_2.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-header3 {
+    position: relative;
+    background-image: url('../gambar/man3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-overlay h1 {
+    font-size: 48px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    border-bottom: 2px solid white;
+}
+
+/* bagian kontak */
+.kontak-form-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+.kontak-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 350px;
+}
+.kontak-form input,
+.kontak-form textarea {
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+.kontak-form button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.kontak-form button:hover {
+    background-color: #e64a19;
+}
+
+/* Map */
+.map {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+  #resultBox {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 92%;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+
+  .result-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .result-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 4px;
+  }
+
+  .result-item span {
+    font-size: 0.9rem;
+  }
+.pencarian {
+    position: relative;
+    max-width: 400px;
+}
+/* Container hasil pencarian */
+.search-result-container {
+    max-height: 200px;       /* Tinggi maksimal sebelum muncul scroll */
+    overflow-y: auto;        /* Aktifkan scroll vertikal */
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;  /* Garis tepi */
+    border-radius: 8px;      /* Sudut melengkung */
+    background: #fff;        /* Latar putih */
+}
+
+/* Item hasil pencarian */
+.search-result-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;  /* Garis pemisah antar item */
+}
+
+/* Gambar mesin */
+.search-result-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Nama mesin */
+.search-result-info h6 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+.search-result-container::-webkit-scrollbar {
+    width: 8px;
+}
+.search-result-container::-webkit-scrollbar-thumb {
+    background: #57b4ba;  /* Warna scrollbar */
+    border-radius: 4px;
+}
+.search-result-item:hover {
+    background: #f5f5f5;
+}
+.text-muted {
+    color: black;
+}

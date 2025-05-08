@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detail Produk</title>
+  <style>
+    body {
+  background-color: #fffdf4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.content {
+  display: flex;
+  gap: 30px;
+}
+
+.left img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #000;
+}
+
+.overview {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.right table {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.harga {
+  color: darkred;
+  font-weight: bold;
+}
+
+.buttons {
+  margin-top: auto;
+  padding-top: 200px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid #ff5c33; /* opsional: beri garis tepi saat hover */
+  transition: 0.3s;
+}
+
+
+.back {
+  background-color: #ff5c33;
+}
+
+.sewa {
+  background-color: #ff5c33;
+}
+
+.gallery {
+  display: none;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+
+
+  </style>
+</head>
+<body>
+
+
+  <div class="container">
+    <h2>Konica Minolta Bizhub C 364E</h2>
+    <div class="content">
+      <div class="left">
+        <img src="gambar/362.jpg" alt="Konica Minolta Bizhub C 364E" id="mainImage">
+        <div class="gallery" id="gallery"></div>
+
+        <div class="overview">
+          <strong>PRODUCT OVERVIEW</strong>
+          <p>> Resolution up to 1200 x 1200 dpi<br>
+            > Paper capacity up to 3,650 sheets<br>
+            > Processor 800MHz<br>
+            > Requires less power, including reduced energy consumption during sleep mode
+          </p>
+        </div>
+      </div>
+      <div class="right">
+        <table>
+          <tr><td>Merk</td><td>: Konica Minolta Bizhub</td></tr>
+          <tr><td>Seri</td><td>: C 364E</td></tr>
+          <tr><td>Tipe Mesin</td><td>: Berwarna</td></tr>
+          <tr><td>Status</td><td>: Tersedia</td></tr>
+          <tr><td>Harga Sewa</td><td>: <span class="harga">Rp 1.990.000</span></td></tr>
+        </table>
+        <div class="buttons">
+            <a href="index.html" class="btn back">Back</a>
+            <a href="sewa.html" class="btn sewa">Sewa Sekarang</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const mainImage = document.getElementById('mainImage');
+    const gallery = document.getElementById('gallery');
+    let galleryShown = false;
+  
+    const imageList = [
+      'gambar/423.jpg',
+      'printer-b.jpg',
+      'printer-c.jpg',
+      'printer-d.jpg',
+      'printer-e.jpg',
+      'printer-f.jpg'
+    ];
+  
+    mainImage.addEventListener('click', function () {
+      if (!galleryShown) {
+        imageList.forEach(src => {
+          const img = document.createElement('img');
+          img.src = src;
+          img.alt = 'Gambar';
+          gallery.appendChild(img);
+        });
+        gallery.style.display = 'grid';
+        galleryShown = true;
+      } else {
+        gallery.innerHTML = '';
+        gallery.style.display = 'none';
+        galleryShown = false;
+      }
+    });
+  </script>
+  
+  
+</body>
+</html>

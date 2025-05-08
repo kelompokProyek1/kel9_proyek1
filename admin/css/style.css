@@ -1,0 +1,11 @@
+.sidebar {
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+.nav-link.active {
+    background-color: #007bff !important;
+    color: white !important;
+}
+.table-actions .btn {
+    margin-right: 5px;
+}

@@ -1,0 +1,93 @@
+.container img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+.text {
+    flex: 1;
+}
+.text h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.text p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* icip */
+.gm1 {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin-left: 45px;
+}
+.gm1 img {
+    width: 250px;
+    height: auto;
+    margin-right: 20px;
+}
+.gm2 {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin-left: 120px;
+}
+.gm2 img {
+    width: 250px;
+    height: auto;
+    margin-right: 40px;
+}
+.box1 {
+    padding: 0px;
+    width: 50px;
+    height: 10px;
+}
+.box2 {
+    width: 350px;
+    height: 250px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+.text12 {
+    flex: 1;
+    font-size: 30px;
+    margin-left: 20px;
+}
+.text13 {
+    flex: 1;
+    font-size: 25px;
+    margin-left: 20px;
+}
+.prgf {
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 25px;
+}
+.prgf1 {
+    margin-left: 180px;
+    margin-right: 180px;
+    font-size: 20px;
+}
+.prgf2 {
+    margin-left: 160px;
+    margin-right: 160px;
+    font-size: 20px;
+}
+.prgf3 {
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 20px;
+}
+.rata {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.tengah {
+    text-align: center;
+}
+.list {
+    display: list-item;
+}
